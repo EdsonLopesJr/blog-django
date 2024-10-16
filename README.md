@@ -118,4 +118,12 @@ python manage.py runserver
 
 Por padrão, o servidor estará acessível em http://127.0.0.1:8000/.
 
+### Logar no Painel Administrativo
+
+acesse o painel de administração em:
+http://127.0.0.1:8000/admin
+
+Insira as credenciais do superusuário que você criou para se autenticar.
+
+Com isso, os botões de adicionar e editar posts estarão disponíveis.
 
