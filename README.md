@@ -8,7 +8,8 @@
 4. [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
 5. [Aplicando as Migrações](#aplicando-as-migrações)
 6. [Coletando Arquivos Estáticos](#coletando-arquivos-estáticos)
-7. [Executando o Servidor de Desenvolvimento](#executando-o-servidor-de-desenvolvimento)
+7. [Criando o Superusuário](#criando-o-superusuário)
+8. [Executando o Servidor de Desenvolvimento](#executando-o-servidor-de-desenvolvimento)
 
 ---
 
@@ -94,6 +95,18 @@ python manage.py collectstatic
 ```
 
 Siga as instruções exibidas no terminal para confirmar a coleta dos arquivos.
+
+## Criando o Superusuário
+
+Para poder realizar operações de CRUD (Criar, Ler, Atualizar, Deletar) no painel administrativo do Django, é necessário criar um superusuário. Esse superusuário terá permissões administrativas, e com isso, o botão de adicionar e editar posts estará disponível no painel.
+
+Crie o superusuário executando o seguinte comando:
+
+```bash
+python manage.py createsuperuser
+````
+
+Preencha as informações solicitadas no terminal, como nome de usuário, e-mail e senha
 
 ## Executando o Servidor de Desenvolvimento
 
